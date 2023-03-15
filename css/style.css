@@ -5,6 +5,12 @@
     font-size: 1em;
 }
 
+button.add-product {
+    float:right;
+}
+
+
+
 .col {
     border: 1px solid gray;
     border-collapse: collapse;
@@ -13,6 +19,11 @@
 
 div.ip {
     border: none;
+}
+
+div.new-prd-btn .container .row .col {
+    border: none;
+    padding: 0;
 }
 
 div.p-name, div.p-color, div.del-p, .color {
