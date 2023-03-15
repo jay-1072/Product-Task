@@ -1,0 +1,11 @@
+.main {
+    border: 1px solid black;
+}
+
+.new-prd-btn {
+    border: 2px solid yellow;
+}
+
+.prd {
+    border: 2px solid blue;
+}
