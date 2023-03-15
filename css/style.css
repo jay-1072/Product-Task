@@ -9,8 +9,6 @@ button.add-product {
     float:right;
 }
 
-
-
 .col {
     border: 1px solid gray;
     border-collapse: collapse;
@@ -21,7 +19,7 @@ div.ip {
     border: none;
 }
 
-div.new-prd-btn .container .row .col {
+div.new-prd-btn .container .row .col, div.get-prd-color .container .row .col {
     border: none;
     padding: 0;
 }
