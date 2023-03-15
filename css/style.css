@@ -33,3 +33,5 @@ div.p-name, div.p-color, div.del-p, .color {
 .row:not(:nth-child(1), :nth-child(even)) {
     background-color: lightyellow;
 }
+
+
