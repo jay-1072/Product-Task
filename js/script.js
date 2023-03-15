@@ -49,24 +49,33 @@ function fetchProductColors() {
         const div = document.createElement('div');
         div.setAttribute("class", "container")
         div.setAttribute("id", "display_prd_color");
-        div.style.marginTop = "10px";
+        div.style.marginTop = "20px";
         div.style.padding = "0";
         
 
         const body = document.body, tbl = document.createElement('table');
+        tbl.setAttribute("id", "prdColorTbl");
     
-        tbl.style.width = '100px';
+        tbl.style.width = '200px';
         tbl.style.border = '1px solid black';
+        tbl.style.marginBottom = '50px';
 
-        const header = tbl.tHead();  document.createElement('thead')
+        const header = document.createElement('thead');
 
-        const headingRow = header.insertRow();
+        const headingRow = tbl.insertRow();
 
         const headingCell1 = headingRow.insertCell();
-        headingCell1.appendChild(document.createTextNode("Product color"));
-
+        headingCell1.appendChild(document.createTextNode(`Product color`));
+        headingCell1.style.border = '1px solid black';
+        headingCell1.style.fontWeight = '700'
+        
         const headingCell2 = headingRow.insertCell();
-        headingCell2.appendChild(document.createTextNode("color count"));
+        headingCell2.appendChild(document.createTextNode(`Color count`));
+        headingCell2.style.border = '1px solid black';
+        headingCell2.style.fontWeight = '700'
+
+        headingRow.appendChild(headingCell1);
+        headingRow.appendChild(headingCell2);
 
         header.appendChild(headingRow);
         tbl.appendChild(header);
@@ -81,11 +90,12 @@ function fetchProductColors() {
                 const td1 = tr.insertCell();
                 td1.appendChild(document.createTextNode(key_itr.next().value));
                 td1.style.border = '1px solid black';
+                td1.style.textAlign = 'center';
 
                 const td2 = tr.insertCell();
                 td2.appendChild(document.createTextNode(val_itr.next().value));
                 td2.style.border = '1px solid black';
-
+                td2.style.textAlign = 'center';
             }
         }
         div.appendChild(tbl);
