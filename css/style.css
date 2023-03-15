@@ -1,11 +1,26 @@
-.main {
-    border: 1px solid black;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1em;
 }
 
-.new-prd-btn {
-    border: 2px solid yellow;
+.col {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    justify-content: center;
 }
 
-.prd {
-    border: 2px solid blue;
+div.ip {
+    border: none;
+}
+
+div.p-name, div.p-color, div.del-p, .color {
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+}
+
+.row:not(:nth-child(1), :nth-child(even)) {
+    background-color: lightyellow;
 }
