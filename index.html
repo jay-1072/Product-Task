@@ -29,7 +29,7 @@
                     <div class="col">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary add-product" data-bs-toggle="modal"
-                            data-bs-target="#newPrdModal">
+                            data-bs-target="#newPrdModal" onclick="reloadModal()">
                             Add New Product
                         </button>
                     </div>
@@ -42,8 +42,8 @@
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="newPrdModalLabel" style="padding-left: 170px;" onclick="reloadModal()">Add new product</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h1 class="modal-title fs-5" id="newPrdModalLabel" style="padding-left: 170px;">Add new product</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
                         </div>
                         <div class="modal-body">
                             <div class="form-floating mb-3">
@@ -65,7 +65,7 @@
         <!-- for product -->
         <div class="prd mt-3">
 
-            <div class="container">
+            <div class="container" id="prd_container">
                 <div class="row">
                     <div class="col text-center py-3 p-name">
                         Product Name
