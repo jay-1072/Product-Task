@@ -34,4 +34,8 @@ div.p-name, div.p-color, div.del-p, .color {
     background-color: lightyellow;
 }
 
+table tr:not(:nth-child(1), :nth-child(even)) {
+    background-color: lightblue;
+} 
+
 
