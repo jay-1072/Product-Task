@@ -5,6 +5,13 @@
     font-size: 1em;
 }
 
+input[type="radio"] {
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.15rem;
+    border-color: gray;
+}
+
 button.add-product {
     float:right;
 }
