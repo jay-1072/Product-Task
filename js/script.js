@@ -6,14 +6,20 @@ function tableCreate(map) {
         document.body.removeChild(document.getElementById("display_prd_color"));
     }
 
-    if(prdNames.length===0 && map.size===0) {
-        return false;
-    }
-    else if (map.size === 0) {
-        console.log(prdNames);
+    // delete action
+    if(map.size===0 && JSON.parse(localStorage.getItem("prdNames")).length!==0) {
         alert("Please select the product color first...");
         return false;
     }
+    else if(JSON.parse(localStorage.getItem("prdNames")).length===0 && map.size===0) {
+        alert("products not available...");
+        return false;
+    }
+    // else if (map.size !== 0) {
+    //     console.log(prdNames);
+    //     alert("Please select the product color first...");
+    //     return false;
+    // }
 
     const div = document.createElement("div");
     div.setAttribute("class", "container");
